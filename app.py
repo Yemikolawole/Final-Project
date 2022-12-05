@@ -101,7 +101,7 @@ def order():
 def confirm_order():
     #smtp code
     #Email lists you want to send email to
-    mailer_list=['callmesalmanali@gmail.com']
+    mailer_list=['yemi.kol26@gmail.com']
 
     #Sender email
     sender_mail='yemi.kol26@gmail.com'
