@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from flask import Flask,render_template,redirect,request,url_for,flash
 from flask_login import UserMixin,login_user,LoginManager,login_required,logout_user,current_user
 from flask_bcrypt import Bcrypt
@@ -100,8 +101,9 @@ def order():
 
 def confirm_order():
     #smtp code
-    #Email lists you want to send email to
-    mailer_list=['yemi.kol26@gmail.com']
+   current_email = current_user.email
+   #Email lists you want to send email to
+   mailer_list=[current_email]
 
     #Sender email
     sender_mail='yemi.kol26@gmail.com'
